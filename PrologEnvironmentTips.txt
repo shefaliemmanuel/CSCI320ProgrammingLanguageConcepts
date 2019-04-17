@@ -1,0 +1,80 @@
+Download SWI-Prolog
+  http://www.swi-prolog.org
+(I used the development release for Mac OSX.)
+  http://www.swi-prolog.org/download/devel
+  Notice that the instructions for the Mac tell you to install xquartz.
+  I did this too:
+  https://www.xquartz.org
+  
+Instructions for Unix and Windows are at
+  http://www.swi-prolog.org/man/quickstart.html
+  or, for Windows:
+  http://www.swi-prolog.org/windows.html
+
+--------  
+General:
+--------
+Type 
+help.
+at the command prompt inside Prolog for a linked manual.
+(This seems to be oriented towards Unix and Windows.)
+
+Type 
+halt.
+to stop Prolog.
+  
+--------------------------
+Consulting a File
+--------------------------
+Prolog people use the word 'consult' to refer to loading the file into
+the Prolog interpeter.
+
+To consult a file such as test.pl, give the whole path in 
+single quotes. Example:
+?- ['/Users/yuliakahl/CS320-ProgrammingLanguages/Prolog/test'].
+(Or use the GUI on the Mac as described below.)
+
+To reconsult a file:
+?- reconsult('/Users/yuliakahl/CS320-ProgrammingLanguages/Prolog/test').
+
+Multiple files can be consulted to give Prolog knowledge from different 
+sources.  
+
+I typed 
+ls.
+inside Prolog to give me an idea of where I was as far as my path and
+it worked.
+  
+---------
+On a Mac:
+---------
+(It is entirely possible that this works for other systems, but I have 
+not checked.)
+
+Once you've downloaded Prolog and XQuartz, launch Prolog from Applications.
+If you use the GUI, you don't have to type the whole path to consult files.
+
+If you've previously created a file using your own editor, go to 
+File --> Consult,
+and select it.
+You can also go to 
+File --> Edit, 
+and select an existing file to work with using their editor.
+If you wish to create a new file using their editor, go to 
+File --> New,
+type in a name and where to save it.
+
+Note that if you are in the editor, you will not see the option to 
+consult your file. Remember to click on the Prolog window to see the 
+its menu. 
+
+If you make changes to your file in the editor, make sure to click on
+File --> Reload modified files
+to re-consult the program. 
+
+Up-arrow retypes you last command at the prompt. (Keep pressing for the
+next-to-last, etc.)
+
+
+
+
